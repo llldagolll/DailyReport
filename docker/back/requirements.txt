@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+mysqlclient
+sqlalchemy
+passlib
+python-jose
+python-multipart
+jinja2
