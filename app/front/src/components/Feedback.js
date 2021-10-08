@@ -1,6 +1,4 @@
-import React, {useState} from "react";
-import { IconButton, makeStyles } from "@material-ui/core";
-import { Button } from "@material-ui/core";
+import React from "react";
 import Grid from '@material-ui/core/Grid'
 
 const Feedback = () => {

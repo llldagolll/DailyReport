@@ -1,30 +1,18 @@
-import React, {useState, useRef} from 'react';
-import Box from '@material-ui/core/Box';
-import TextField from '@material-ui/core/TextField';
-import Grid from '@material-ui/core/Grid'
+import React, {useRef} from 'react';
 
 
 
 const Ajenda = () =>  {
-  const ref = useRef();
-  const  onclick = () => {
-    console.log(ref)
-  }
+  const textRef = useRef(null);
+  // const  onclick = () => {
+  //   console.log(textRef)
+  // }
 
   return (
-    <Grid container alignItems="center" justify="center">
-      <Box
-        component="form"
-        sx={{
-          '& > :not(style)': { m: 1, width: '25ch' },
-        }}
-        noValidate
-        autoComplete="off"
-      >
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" ref={ref} />
-        <button onClick={onclick}>fas </button>
-      </Box>
-    </Grid>
+      <>
+        <input ref={textRef} type="text" />
+        <button type="button" onClick={()=> alert(textRef.current.value)}>値の確認</button>
+      </>
   );
 }
 

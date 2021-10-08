@@ -1,13 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
-import { Button } from "@material-ui/core";
 
-const useStyles = makeStyles(() => ({
-    button: {
-        color: '#FFF',
-        justifyContent: 'right'
-    } 
-}));
 
 
 const SideBar = () => {
@@ -39,7 +31,6 @@ const SideBar = () => {
     }
 
 
-    const classes = useStyles();
 
     return (
         <>
