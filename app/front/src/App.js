@@ -1,6 +1,5 @@
 import './App.css';
 import Header from './components/Header';
-import SideBar from './components/SideBar';
 import Ajenda from './components/Ajenda';
 import Login from './components/login';
 import Schedule from './components/Schedule';
