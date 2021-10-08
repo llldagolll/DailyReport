@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-
+import '../tailwind.css';
 
 
 const Ajenda = () =>  {
@@ -11,7 +11,7 @@ const Ajenda = () =>  {
   return (
       <>
         <input ref={textRef} type="text" />
-        <button type="button" onClick={()=> alert(textRef.current.value)}>値の確認</button>
+        <button class="w-24 m-4 p-4 rounded-sm bg-red-500 text-center text-white" type="button" onClick={()=> alert(textRef.current.value)}>値の確認</button>
       </>
   );
 }
